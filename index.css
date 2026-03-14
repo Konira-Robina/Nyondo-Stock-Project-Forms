@@ -1,0 +1,80 @@
+h1{
+  background-color:rgb(3, 217, 255);
+}
+input {
+  padding: 10px;
+  background-color: rgba(199, 198, 198, 0.562);
+}
+select {
+  padding: 10px;
+  background-color: rgba(199, 198, 198, 0.562);
+}
+
+.sidebar {
+  flex: 1;
+  /* height: 55vh; */
+  border-right: 1px solid black;
+  font-weight: lighter;
+}
+.input-section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.container {
+  width: 100%;
+  /* height: 80vh; */
+  display: flex;
+  flex-direction: row;
+  font-size: larger;
+  font-weight: 500;
+}
+.input-container {
+  display: flex;
+  column-gap: 10px;
+}
+.content {
+  flex: 3;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px;
+  height: fit-content;
+}
+.content-container {
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  column-gap: 10px;
+  place-content: space-between;
+  align-items: center;
+
+  /* display: flex;
+  flex-direction: column; */
+  /* margin: 20px;  */
+  /* display: grid;
+  column-gap: 10px; */
+  /* align-items: center; */
+}
+#cancel {
+  background-color: aliceblue;
+  color: blue;
+  font-size: large;
+  text-align: left;
+  margin-left: 100px;
+  padding: 5px 30px;
+}
+#submit {
+  color: white;
+  background-color: blue;
+  padding: 5px 30px;
+  font-size: large;
+}
+button {
+  border-radius: 10px;
+  margin-left: 700px;
+  margin-bottom: 10px;
+}
+button:hover {
+  transform: scale(1.1);
+  transition-duration: 1s;
+}

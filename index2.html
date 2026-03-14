@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supplier Registration Form</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body style="border: 1px solid black; margin: 5%;">
+  <h1 style="text-align: center;border: 1px solid black;">Supplier Registration Form</h1>
+  <div class="container">
+    <div class="sidebar">
+      <div style="border: 1px solid black;">
+        <h2>Dashboard</h2>
+        <div><a href="index.html">Sales Management</a></div>
+         <div><a href="stock.html">Stock Management</a></div>
+      </div>
+    </div>
+    <div style="border: 1px solid black; width: 35%;">
+      <div class="input-section">
+        <h3>General Information</h3>
+        <label for="SupplierName">Supplier Name</label>
+        <input type="text">
+        <label fpr="SupplierNumber">Supplier No</label>
+        <input type="text">
+        <label for="Contact">Tel No</label>
+        <input type="number">
+        <label for="suppierSize">Supplier Size</label>
+        <input type="number">
+        <label for="SupplierSite">Supplier Site</label>
+        <input type="text">
+        <label for="Country">Country</label>
+        <input type="text">
+      </div>
+    </div>
+    <div class="content">
+      <form>
+        <section>
+          <h3>Payment Information</h3>
+          <div class="input-container">
+            <div class="input-section">
+              <label for="TaxID">Tax ID</label>
+              <input type="text">
+              <label for="BankName">Bank Name</label>
+              <input type="text">
+              <label for="AccountNumber">Account Number</label>
+              <input type="number">
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="input-container">
+            <div class="input-section">
+              <div>
+                <br>
+                <label for="Payment Method"> Payment Terms</label>
+                <input type="hidden"><br>
+                <label for="15days">15 days</label>
+                <input type="checkbox">
+                <label for="30days">30 days</label>
+                <label for="Others">Others</label>
+                <input type="checkbox">
+              </div>
+              <br>
+              <div>
+                <hr>
+                <label for="Payment Method">Payment method</label>
+                <input type="hidden"><br>
+                <label for="Momo">Momo</label>
+                <input type="checkbox"><br>
+                <label for="Cheque">Cheque</label>
+                <input type="checkbox"><br>
+                <label for="Others">Others</label>
+                <input type="checkbox">
+              </div>
+            </div>
+          </div>
+        </section>
+    </div>
+    </form>
+  </div>
+  </div>
+  <h2 style="text-align: center;">Bussiness Details</h2>
+  <div class="content-container">
+    <div style="margin: 20px;">
+      <label for="nature of Business">Nature of Business</label>
+      <select>
+        <option value="1">Select Business</option>
+        <option value="2">Wholesale</option>
+        <option value="2">Retail</option>
+        <option value="3">Trader</option>
+        <option value="4">Other</option>
+      </select>
+    </div>
+    <div style="margin:20px;">
+      <label for="ProductSupplied">Products Supplied</label>
+      <input type="text">
+    </div>
+    <div style="margin:20px;">
+      <label for="Supply Quantity">Supply Quantity</label>
+      <input type="text">
+    </div>
+  </div>
+  <br>
+  <h2 style="text-align: center;">Address</h2>
+  <hr>
+  <div style="border: 1px solid black; display: flex; flex-direction: row; justify-content: space-around; padding:3%;">
+    <div>
+      <div style="display:flex; flex-direction: column;">
+        <label for="Email">Email</label>
+        <input type="text"><br>
+      </div>
+      <div style="display: flex; flex-direction: column;">
+        <label for="Address"> Physical Address</label>
+        <input type="text">
+      </div>
+    </div>
+
+    <div>
+      <div style="display:flex; flex-direction: column;">
+        <label for="City">City</label>
+        <input type="text"><br>
+      </div>
+      <div style="display:flex; flex-direction: column;">
+        <label for="City">State</label>
+        <input type="text">
+      </div>
+    </div>
+  </div>
+  </div>
+  <div>
+    </form>
+    <br>
+    <div>
+      <button type="button" id="cancel">Cancel</button>
+      <button type="submit" id="submit">Submit</button>
+    </div>
+    <footer style="text-align: center;">Supplier Mangement © 2026</footer>
+</body>
+
+</html>
