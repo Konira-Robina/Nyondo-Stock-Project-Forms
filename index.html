@@ -1,112 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sales Registration Form</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        
-    </style>
-<body style="margin: 5%;">   
-    <div class="container">
-        <div class="sidebar">    
-        <h2>Dashboard</h2>
-        <!-- <div><a href="index.html">Sales Management</a></div><hr> -->
-        <div> <a href="index2.html">Supplier Management</a></div><hr>
-        <div> <a href="stock.html">Stock Management</a></div><hr>
-        <!-- <div> <a href="Transport Management">Transport Management</a></div><hr> -->
-     </div>
-      <div class="content"> 
-            <form action="">
-                <!--section-->
-                <section>
-                    <h1>Sales Registration</h1>
-                    <div class="input-container">
-                        <div class="input-section">
-                        <label for="salesDate">Sales Date</label>
-                        <input type="date">
-                    </div>
-                    <div class="input-section">
-                        <label for="salesPerson">Sales Person</label>
-                    <select name="" id="">
-                        <option value="">Select a representative</option>
-                        <option value="1">Konra Mitchell</option>
-                        <option value="2">Robina Keyla</option>
-                    </select>
-                    </div>
-                    </div>
-                </section>
-                <section> 
-                <h1>Customer Details</h1>
-                <div class="input-container">
-                    <div class="input-section">
-                        <label for="Name">Name</label>
-                        <input type="text" placeholder="Enter full name">
-                    </div>
-                    <div class="input-section">
-                        <label for="PhoneNumber">Phone Number</label>
-                        <input type="number" placeholder="Enter Phone Number">
-                    </div>
-                    </div>
-                    <br>
-                <div class="input-container">      
-                     <div class="input-section">
-                         <label for="Email">Email</label>
-                          <input type="email" placeholder="Enter email">
-                     </div>  
-                     <div class="input-section">   
-                  <label for="CustomerType">Customer Type</label>
-                  <select> 
-                     <option value="">Select Customer Type</option>
-                     <option value="1">Whole Seller</option>
-                     <option value="2">Retailer</option>
-                     <option value="2">Trader</option>
-                     <option value="3">Other</option>
-                 </select> 
-               </div>
-            </div>
-            </section>
-            <section>
-             <h1>Items</h1>
-             <div class="input-container">
-                <div class="input-section">
-                <label for="PdtId">Pdt Id</label>
-                <input type="text" placeholder="Pdt ID">
-                </div>
-                <div class="input-section">
-                <label for="Quantity">Quantity</label>
-                <input type="number">
-            </div>
-                 <div class="input-section">
-                <label for="UnitPrice">Unit Price</label>
-                <input type="number">
-                </div>
-                </div>
-                <br>
-                <div class="input-container">
-                    <div class="input-section">
-                        <label for="Pdt Id" >Pdt Id</label>
-                        <input type="text" placeholder="Pdt ID">
-                    </div>
-                    <div class="input-section">
-                        <label for="Quantity">Quantity</label>
-                        <input type="number">
-                    </div>
-                    <div class="input-section">
-                        <label for="UnitPrice">Unit Price</label>
-                        <input type="number">
-                    </div>
-                </div>
-        </section>
-            </form>
-            <br><br>
-            <div>
-        <button type="button" id="cancel">Cancel</button>
-        <button type="submit" id="submit">Submit</button>
-    </div> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nyondo Stock Registration</title>
+   <link rel="stylesheet" href="stock.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</head>
+<body style="background-color:rgb(194, 212, 247);">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Stock System</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <div class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <a class="nav-link" href="#"><a href="index2.html">Supplier Management</a>
+            <a class="nav-link" href="#"><a href="sales.html">Sales Management</a>
+        </div>
+      </div>
+  </nav>
+  <div class="container" style="background-color:black;">
+    <!-- Content here -->
+      <div class="card shadow">
+    <div class="container-fluid">
+      <h1 style="text-align: center; background-color: rgb(103, 103, 218);">Nyondo Stock Registration Form</h1>
     </div>
+    <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+      <h4>Item Information</h4>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Item Name</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Product Code</label>
+          <input type="password" class="form-control" id="inputPassword4">
+        </div>
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Category</label>
+            <input type="text" class="form-control" id="inputEmail4">
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Date Recieved</label>
+            <input type="date" class="form-control" id="inputPassword4">
+          </div>
+          <h4>Stock Quantity</h4>
+          <div class="col-md-4">
+            <label for="inputCity" class="form-label">Quantity</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">Unit</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="col-md-4">
+            <label for="inputZip" class="form-label">Price per Unit</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+          <h4>Supplier Details</h4>
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Supplier Name</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Supplier Contact</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label"> Supplier Address</label>
+              <input type="text" class="form-control" id="inputAddress">
+            </div>
+
+            <h4>Storage Information</h4>
+            <div class="col-md-4">
+              <label for="inputCity" class="form-label">Warehouse</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">Shelf Number</label>
+              <input type="number" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+              <label for="inputZip" class="form-label">Expiry Date</label>
+              <input type="date" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Upload Invoice</label>
+              <input type="file" class="form-control" id="inputAddress">
+            </div>
+            <div class="col-md-4">
+              <a class="btn btn-primary disabled" role="button" aria-disabled="true">Register Stock</a>
+              <a class="btn btn-secondary disabled" role="button" aria-disabled="true">Reset</a>
+            </div>
+          </form>
     </div>
-    <footer style="text-align: center;"> Sales Management System © 2026</footer>
+  </div>
+  </div>
 </body>
 </html>
